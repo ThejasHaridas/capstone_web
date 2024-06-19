@@ -1,0 +1,214 @@
+/* Recipe-Pages StyleSheet*/
+/* Fonts */
+@font-face{ 
+	font-family: "Reey";
+	    src: url("../Fonts/reey/Reey-Regular.woff") format("woff");
+}
+@font-face{ 
+	font-family: "Bonveno";
+	src: url("../Fonts/BonvenoCF-Light.woff") format("woff");
+}
+@font-face{ 
+	font-family: "Harting";
+	src: url("../Fonts/Harting_plain.woff") format("woff");
+}
+@font-face{ 
+	font-family: "Caroni";
+	src: url("../Fonts/Caroni-Regular.woff") format("woff");
+}
+
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    color: inherit;
+    text-decoration: none; 
+}
+
+/* Page Content */
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-image: linear-gradient(#4e0e47,#841b3a );
+    /* background-size: cover; */
+}
+.header {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.headerTitle {
+    width: 100vw;
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-family: "Reey",Arial;
+    background-color: #841b3a;
+}
+
+/* navbar */
+.navbar {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #841b3a;
+    margin-top: 3rem;
+}
+.pageLink { 
+    flex: 1;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Bonveno",Arial;
+    font-size: 1.2rem;
+    color: white;
+    transition: background-color 1s ease-in-out, color 1s ease-in-out;
+}
+.pageLink:hover {
+    color: #ffffff;
+    background-color: #4e0e475f;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+}
+
+/* Hero */
+.hero {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+.heroImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+img {
+    max-height: 300px;
+    object-fit: cover;
+    width: 100%;
+}
+.heroComment {
+    width: 100%;
+    padding: 2rem;
+    margin: 1rem 0;
+    text-align: center;
+    font-family: "Bonveno",Arial;
+    font-size: 1.8rem;
+    color: white;
+    background-color: #841b3a;
+}
+.heroInfo {
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    font-family: "Caroni",Arial;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+/* Ingredients */
+.ingredients {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ingredientsTitle {
+    width: 100vw;
+    padding: 1rem;
+    text-align: center;
+    font-family: "Harting",Arial;
+    font-weight: 900;
+    font-size: 3rem;
+    color: #ffffff;
+    background-color: #841b3a;
+}
+.ingredientsInfo {
+    margin: 1rem;
+    text-align: center;
+    font-family: "Caroni",Arial;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: white;
+}
+/* IDEA: Create the list so that there is space between the amount needed and the item it self */
+.ingredientsList{
+    text-align: center;
+    line-height: 1.8;
+    font-family: "Harting",Arial;
+    font-size: 20px;
+    list-style: none;
+    color: white;
+}
+
+/* Steps */
+.recipeSteps {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+.stepsTitle {
+    background-color: #4e0e477f;
+    padding: 20px 0;
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+    font-family: "Harting",Arial;
+    font-weight: 900;
+    font-size: 40px;
+    color: #ffffff;
+}
+.stepsList {
+    list-style-type: number;
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-family: "Caroni",Arial;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 1.8;
+    color: white;
+}
+.stepsLink {
+    color: inherit;
+    text-decoration-line: underline;
+}
+
+/* Footer */
+.footer {
+    background-color: #4e0e477f;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    font-family: "Bonveno", Arial;
+    color: white;
+    min-height: 40px;
+}
+.footer span {
+    font-family: "Reey", sans-serif;
+}
+.footer span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
